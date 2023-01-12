@@ -1,0 +1,60 @@
+.img_container {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-around;
+  gap: 10px;
+  transition: 0.5s;
+}
+
+img {
+  border: 2px solid black;
+  border-radius: 999px;
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.user-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  min-width: 300.39px;
+  min-height: 350.88px;
+  max-width: 300.39px;
+  max-height: 350.88px;
+  transition: 0.5s;
+}
+
+.user-card span {
+  background-color: aliceblue;
+  color: red;
+  font-size: 30px;
+  text-align: center;
+}
+
+.user-card h1 {
+  margin: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .user-card {
+    max-width: 150px;
+    min-width: 250px;
+    max-height: 150px;
+    min-height: 270px;
+    transition: 0.5s;
+  }
+
+  img {
+    border: 2px solid black;
+    border-radius: 999px;
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
